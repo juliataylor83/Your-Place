@@ -45,10 +45,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .full {
 }
 
-.main-page {
+/*.main-page {
 	max-width: 1040px;
 	margin: 0 auto;
-}
+}*/
 
 .inner {
 	padding: 2em 0;
@@ -56,13 +56,36 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 #primary {
 	float: left;
-	padding-right: 50px;
-	width: 66.5%;
+	/*padding-right: 50px;*/
+	width: 100%;
 }
 
-#secondary {
+/* #secondary {      If using a sidebar, uncomment this out
 	float: left;
 	width: 33.5%;
+} */
+
+.header-area,
+.footer-area {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.main-content-area {
+	background-color: lightblue;
+}
+
+.footer-area {
+	background-color: ;
+}
+
+.site-content {
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+.main-content-area .main-page {
+	margin-top: -8px;
 }
 
 /*--------------------------------------------------------------
@@ -309,10 +332,6 @@ p {
 
 a {
 	color: royalblue;
-}
-
-a:visited {
-	color: purple;
 }
 
 a:hover,
@@ -637,31 +656,66 @@ textarea {
 # Header
 --------------------------------------------------------------*/
 
+#header-image {
+	float: left;
+	padding-left: 100px;
+}
+
+.metaslider .caption,
+.metaslider .cs-title,
+.metaslider .nivo-caption {
+	font-size: 36px;
+	width: 50%;
+	height: 100%;
+	line-height: 40px;
+	background: rgba(0,0,0, 1);
+	margin-bottom: 30px;
+	margin-left: 30px;
+}
+
+.metaslider .caption-wrap {
+	background: none !important;
+}
+
 /*--------------------------------------------------------------
 # Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	float: right;
 }
 
 .main-navigation ul {
 	display: none;
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+	padding: 18px 100px 0 0;
 }
 
 .main-navigation li {
 	float: left;
 	position: relative;
+	padding-right: 20px;
+}
+
+.main-navigation li:nth-child(1) {
+	padding-right: 40px;
+}
+
+.main-navigation li:nth-child(2) {
+	padding-right: 40px;
+}
+
+.main-navigation li.current-menu-item a {
+	color: midnightblue;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .main-navigation ul ul {
@@ -802,6 +856,20 @@ textarea {
 # Footer
 --------------------------------------------------------------*/
 
+.site-footer p {
+	float: left;
+	padding-left: 50px;
+	margin-bottom: 0;
+}
+
+.site-footer span {
+	float: right;
+	margin-top: 30px;
+	padding-right: 50px;
+	padding-left: 50px;
+	display: block;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -905,7 +973,7 @@ object {
 # Responsive
 --------------------------------------------------------------*/
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 60em) {
 	.menu-toggle {
 		display: none;
 	}
@@ -918,7 +986,7 @@ object {
 	}
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 60em) {
 	#primary,
 	#secondary {
 		float: none;

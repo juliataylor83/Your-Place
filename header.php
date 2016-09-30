@@ -38,6 +38,11 @@
 						<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 					<?php
 					endif; ?>
+					<div id="header-image">
+    					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+       						<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo" width="200px" height="100px" />
+    					</a>
+					</div>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -46,6 +51,12 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 		</div><!-- .main-page -->
+		<?php 
+    		echo do_shortcode("[metaslider id=36 restrict_to=home]"); 
+    		if ( has_post_thumbnail() ) {
+				the_post_thumbnail('full');
+			} 
+		?>
 	</div><!-- .header-area full -->
 
 	<div class="main-content-area full">

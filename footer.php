@@ -20,9 +20,8 @@
 		<div class="main-page">
 			<footer id="colophon" class="site-footer inner" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'your-place' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'your-place' ), 'WordPress' ); ?></a>
-					<span class="sep"> | </span>
-					<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'your-place' ), 'your-place', '<a href="http://underscores.me/" rel="designer">Julia Taylor</a>' ); ?>
+					<p>Your Place Grimsby <br> Company Number: 05321038 <br> Charity Number: 1110927</p>
+					<span><?php printf( esc_html__( 'Website Development & Design by %s' ), '<a href="http://jt-digitalmedia.com" rel="designer">JTDigitalMedia</a>' ); ?></span>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- .main-page -->
