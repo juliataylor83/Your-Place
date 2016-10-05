@@ -114,6 +114,14 @@ function your_place_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'your_place_scripts' );
 
+function wpb_add_google_fonts() {
+
+	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:600,700', false );
+}
+
+add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+
+
 /**
  * Implement the Custom Header feature.
  */

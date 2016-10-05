@@ -20,25 +20,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Structure
-# Normalize
-# General Styles (typography, links, elements)
-# Helper Styles
-# Buttons & Inputs
-# Header
-# Menus
-# Content
-# Comments
-# Sidebar
-# Footer
-# Infinite scroll
-# Media
-# Responsive
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
 # Structure
 --------------------------------------------------------------*/
 
@@ -51,12 +32,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }*/
 
 .inner {
-	padding: 2em 0;
+	padding: 1em 0;
 }
 
 #primary {
 	float: left;
-	/*padding-right: 50px;*/
 	width: 100%;
 }
 
@@ -72,7 +52,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 .main-content-area {
-	background-color: lightblue;
+	background-color: #f7f7f7;
 }
 
 .footer-area {
@@ -80,8 +60,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 .site-content {
-	max-width: 1040px;
+	max-width: 1200px;
 	margin: 0 auto;
+	padding-bottom: 32px;
 }
 
 .main-content-area .main-page {
@@ -311,7 +292,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -331,13 +312,14 @@ p {
 }
 
 a {
-	color: royalblue;
+	color: #478AB8;
+	text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #00027d;
 }
 
 a:focus {
@@ -677,6 +659,22 @@ textarea {
 	background: none !important;
 }
 
+.entry-header {
+	text-align: center;
+	color: #00027d;
+	border-bottom: solid 1px gray;
+}
+
+.header-logo img {  /*this is the Your Place big logo at the bottom of all pages*/
+	display: block;
+	margin: auto;
+}
+
+.header-logo {
+	margin-bottom: -35px;
+	margin-top: 50px;
+}
+
 /*--------------------------------------------------------------
 # Menus
 --------------------------------------------------------------*/
@@ -689,7 +687,7 @@ textarea {
 	display: none;
 	list-style: none;
 	margin: 0;
-	padding: 18px 100px 0 0;
+	padding: 26px 100px 0 0;
 }
 
 .main-navigation li {
@@ -707,7 +705,7 @@ textarea {
 }
 
 .main-navigation li.current-menu-item a {
-	color: midnightblue;
+	color: #00027d;
 }
 
 .main-navigation a {
@@ -797,6 +795,164 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Homepage
+--------------------------------------------------------------*/
+
+
+.column1, .column2, .column3 {
+	float: left;
+	width: 32%;
+	border: 2px solid gray;
+	border-radius: 15px;
+	background: white;
+	padding-bottom: 30px;
+}
+
+.column1, .column2 {
+	margin-right: 10px;
+}
+
+.column1, .column2, .column3 {
+	text-align: center;
+}
+
+.column1 h2, .column2 h2, .column3 h2 {
+	margin-bottom: 12px;
+	color: #00027d;
+	text-transform: uppercase;
+}
+
+.column1 p, .column2 p, .column3 p {
+	background: #dbed84;
+	border-radius: 10px;
+	width: 80%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px 10px;
+}
+
+.fa {
+	color: #478AB8;
+}
+
+.column3 p:first-of-type {
+	display: none;
+}
+
+.column3 p:last-of-type {
+	display: none;
+}
+
+.button {
+	background-color: #00027d;
+	padding: 10px;
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border-radius: 10px;
+	text-decoration: none;
+	-webkit-transition: background 500ms ease;
+	-moz-transition: background 500ms ease;
+	-ms-transition: background 500ms ease;
+	-o-transition: background 500ms ease;
+	transition: background 500ms ease;
+}
+
+.button:hover {
+	color: white;
+	background-color: #478ab8;
+	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Activities
+--------------------------------------------------------------*/
+
+.og-image, .og-info {
+	float: left;
+	width: 50%;
+	margin-bottom: 40px;
+}
+
+.ap-image, .ap-info {
+	float: left;
+	width: 50%;
+	margin-bottom: 60px;
+}
+
+.wa {
+	clear: both;
+}
+
+.wa-image, .wa-info {
+	float: left;
+	width: 50%;
+	padding-top: 30px;
+}
+
+.wa-text a {
+	text-decoration: none;
+}
+
+.og-image {
+	padding-left: 50px;
+	padding-top: 50px;
+}
+
+.ap-image {
+	padding-left: 50px;
+	padding-top: 50px;
+}
+
+.wa-image {
+	padding-left: 50px;
+	padding-top: 10px;
+}
+
+.og-title h2, .ap-title h2, .wa-title h2 {
+	color: #00027d;
+	text-align: center;
+}
+
+.og-text p, .ap-text p, .wa-text p {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.about-text {
+	text-align: center;
+	font-size: 20px;
+	margin: 30px;
+}
+
+.bio1-5 {
+	width: 100%;
+	margin: auto;
+}
+
+.bio1, .bio2, .bio3, .bio4, .bio5 {
+	float: left;
+}
+
+.bio1, .bio2, .bio3, .bio4 {
+	padding-right: 10px;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+.weekly-text p {
+	text-align: center;
+	font-size: 20px;
+}
+
+/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 
@@ -821,7 +977,7 @@ textarea {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 1.5em 1.5em;
 }
 
 .page-links {
@@ -868,6 +1024,10 @@ textarea {
 	padding-right: 50px;
 	padding-left: 50px;
 	display: block;
+}
+
+.site-info img {
+	margin-top: -600px;
 }
 
 /*--------------------------------------------------------------
@@ -973,7 +1133,7 @@ object {
 # Responsive
 --------------------------------------------------------------*/
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 65em) {
 	.menu-toggle {
 		display: none;
 	}
@@ -982,7 +1142,7 @@ object {
 	}
 }
 
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 65em) {
 	#primary,
 	#secondary {
 		float: none;
@@ -996,10 +1156,55 @@ object {
 	.metaslider .caption,
 	.metaslider .cs-title,
 	.metaslider .nivo-caption {
-		font-size: 18px;
+		font-size: 26px;
+		width: 70%;
+		height: 30%;
+		line-height: 30px;
+		background: rgba(0,0,0, 1);
+		margin-bottom: 10px;
+		margin-left: 10px;
+	}
+	.site-footer p, 
+	.site-footer span {
+		float: none;
+		padding: 0;
+		text-align: center;
+	}
+	.column1, .column2, .column3 {
+		float: none;
+		width: 60%;
+		border: 2px solid gray;
+		border-radius: 15px;
+		background: white;
+		padding-bottom: 30px;
+		margin: auto;
+		margin-bottom: 40px;
+	}
+	#header-image {
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 45em) {
+	.column1, .column2, .column3 {
+		float: none;
+		width: 80%;
+		border: 2px solid gray;
+		border-radius: 15px;
+		background: white;
+		padding-bottom: 30px;
+		margin: auto;
+		margin-bottom: 40px;
+	}
+	.metaslider .caption,
+	.metaslider .cs-title,
+	.metaslider .nivo-caption {
+		font-size: 14px;
 		width: 70%;
 		height: 15%;
-		line-height: 20px;
+		line-height: 14px;
 		background: rgba(0,0,0, 1);
 		margin-bottom: 10px;
 		margin-left: 10px;

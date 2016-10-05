@@ -15,6 +15,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<script src="https://use.fontawesome.com/4317973589.js"></script>
 
 <?php wp_head(); ?>
 </head>
@@ -40,13 +41,13 @@
 					endif; ?>
 					<div id="header-image">
     					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-       						<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo" width="200px" height="100px" />
+       						<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo" width="300px" height="200px" />
     					</a>
 					</div>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'your-place' ); ?></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'your-place' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the contact page.
+ * The template for displaying the weekly activities page.
  *
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
@@ -20,9 +20,9 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">
-					<?php
-						the_content();
-					?>
+					<div class="weekly-text">
+						<?php the_content(); ?>
+					</div>
 				</div><!-- .entry-content -->
 
 			<?php endwhile; // End of the loop.?>
