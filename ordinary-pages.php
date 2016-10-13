@@ -1,7 +1,6 @@
 <?php
 /**
- * The template for displaying the weekly activities page.
- *
+ * Template Name: Ordinary Pages
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *

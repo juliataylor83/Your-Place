@@ -31,7 +31,7 @@ get_header(); ?>
 				</div>
 
 				<div class="entry-content">
-					<div class="bio1-5">
+					<div class="bios">
 						<div class="bio1">
 							<?php echo wp_get_attachment_image ( $image_1, $size ); ?>
 						</div>

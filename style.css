@@ -43,7 +43,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /* #secondary {      If using a sidebar, uncomment this out
 	float: left;
 	width: 33.5%;
-} */
+}
+*/
 
 .header-area,
 .footer-area {
@@ -60,7 +61,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 .site-content {
-	max-width: 1200px;
+	max-width: 1500px;
 	margin: 0 auto;
 	padding-bottom: 32px;
 }
@@ -669,6 +670,10 @@ textarea {
 	margin-top: 50px;
 }
 
+.header-logo-frontpage {
+	display: none;
+}
+
 /*--------------------------------------------------------------
 # Menus
 --------------------------------------------------------------*/
@@ -691,14 +696,26 @@ textarea {
 }
 
 .main-navigation li:nth-child(1) {
-	padding-right: 40px;
+	padding-right: 30px;
 }
 
 .main-navigation li:nth-child(2) {
-	padding-right: 40px;
+	padding-right: 30px;
 }
 
-.main-navigation li.current-menu-item a {
+.main-navigation li:nth-child(3) {
+	padding-right: 30px;
+}
+
+.main-navigation li:nth-child(2).current-menu-item a {
+	color: #00027d;
+}
+
+.main-navigation li:nth-child(3).current-menu-item a {
+	color: #00027d;
+}
+
+.main-navigation li:nth-child(4).current-menu-item a {
 	color: #00027d;
 }
 
@@ -712,11 +729,13 @@ textarea {
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	background: white;
 	float: left;
 	position: absolute;
 	top: 1.5em;
 	left: -999em;
 	z-index: 99999;
+	padding: 10px 0 0 10px;
 }
 
 .main-navigation ul ul ul {
@@ -725,11 +744,16 @@ textarea {
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+	width: 250px;
+	padding-bottom: 3px;
 }
 
 .main-navigation ul ul li {
+	
+}
 
+.main-navigation ul ul li:nth-child(1).current-menu-item a {
+	color: #00027d;
 }
 
 .main-navigation li:hover > a,
@@ -792,6 +816,66 @@ textarea {
 # Homepage
 --------------------------------------------------------------*/
 
+#primary-frontpage {
+	float: right;
+	width: 88%;
+}
+
+#secondary {
+	float: left;
+	width: 12%;
+	padding-left: 25px;
+}
+
+.fca_qc_quiz {
+	padding: 0 !important;
+	margin-top: 60px;
+}
+
+.fca_qc_quiz_description_img {
+	height: 160px;
+	width: 160px;
+	border: 2px solid #478AB8;
+}
+
+.fca_qc_quiz button.fca_qc_button {
+	padding: 10px 10px;
+	margin-top: 5px !important;
+	width: 130px !important;
+	border-radius: 10px !important;
+	box-shadow: none !important;
+	background-color: #00027d !important;
+	-webkit-transition: background 500ms ease !important;
+	-moz-transition: background 500ms ease !important;
+	-ms-transition: background 500ms ease !important;
+	-o-transition: background 500ms ease !important;
+	transition: background 500ms ease !important;
+}
+
+.fca_qc_quiz button.fca_qc_button:hover {
+	background-color: #478AB8 !important;
+}
+
+#widget_sp_image-2 {
+	margin-top: 100px;
+}
+
+#widget_sp_image-2 img {
+	height: 220px;
+	width: 180px;
+}
+
+#widget_sp_image-2 p {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.widget_sp_image-description a.button {
+	font-size: 17px;
+	padding: 8px 8px;
+	font-weight: bold;
+	letter-spacing: 0;
+}
 
 .column1, .column2, .column3 {
 	float: left;
@@ -817,7 +901,6 @@ textarea {
 }
 
 .column1 p, .column2 p, .column3 p {
-	background: #ebf7b2;
 	border-radius: 10px;
 	width: 80%;
 	margin: auto;
@@ -826,8 +909,43 @@ textarea {
 	padding: 10px 10px;
 }
 
+.column1 p {
+	background: #dbedf9;
+}
+
+.column2 p {
+	background: #f0f9c0;
+}
+
+.column3 p {
+	background: #f5dbf9;
+}
+
+.column1 a {
+	color: #404040;
+}
+
+.column1 a.button {
+	color: white;
+}
+
 .fa {
 	color: #478AB8;
+}
+
+.column1 img {
+	height: 90px;
+	width: 130px;
+}
+
+.column2 img {
+	height: 110px;
+	width: 120px;
+}
+
+.column3 img {
+	height: 110px;
+	width: 120px;
 }
 
 .column3 p:first-of-type {
@@ -924,18 +1042,14 @@ textarea {
 	margin: 30px;
 }
 
-.bio1-5 {
-	width: 100%;
+.bio1, .bio2, .bio3, .bio4, .bio5 {
+	float: left;
+	width: 20%;
+	height: 100%;
 	margin: auto;
 }
 
-.bio1, .bio2, .bio3, .bio4, .bio5 {
-	float: left;
-}
 
-.bio1, .bio2, .bio3, .bio4 {
-	padding-right: 10px;
-}
 
 /*--------------------------------------------------------------
 # Weekly Activities
@@ -1182,8 +1296,7 @@ object {
 }
 
 @media screen and (max-width: 65em) {
-	#primary,
-	#secondary {
+	#primary {
 		float: none;
 		padding: 0;
 		width: 100%;
