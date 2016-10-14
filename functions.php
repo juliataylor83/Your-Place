@@ -15,6 +15,22 @@ if ( ! function_exists( 'your_place_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
+
+function create_custom_post_type() {
+	register_post_type( 'our_team',
+		array(
+			// 'supports' => $supports,
+			'labels' => array(
+				'name' => __( 'Our Team' ),
+				),
+			'public' => true,
+			'has_archive' => false
+		)
+	);
+}
+
+add_action( 'init', 'create_custom_post_type' );
+
 function your_place_setup() {
 	/*
 	 * Make theme available for translation.

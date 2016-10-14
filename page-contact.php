@@ -24,6 +24,18 @@ get_header(); ?>
 				</div>
 
 				<div class="entry-content">
+					
+					<section class="contact-details">
+						<h2>Address</h2>
+						<p>236 Wellington Street</p>
+						<p>Great Grimsby</p>
+						<p>North East Lincolnshire</p>
+						<p>DN32 7JP</p>
+						<h2>Telephone</h2>
+						<p>01472 322 557</p>
+						<h2>Opening Hours</h2>
+						<p>Monday - Friday: 10.00am to 4.00pm</p>
+					</section>
 
 				</div><!-- .entry-content -->
 
