@@ -668,6 +668,7 @@ textarea {
 .header-logo {
 	margin-bottom: -35px;
 	margin-top: 50px;
+	clear: both;
 }
 
 .header-logo-frontpage {
@@ -1045,9 +1046,10 @@ textarea {
 	margin: 30px;
 }
 
-.our-team {
+.entry-content-about {
 	margin: auto;
 	display: block;
+	clear: initial;
 }
 
 .our-team li {
@@ -1058,7 +1060,6 @@ textarea {
 }
 
 
-
 /*--------------------------------------------------------------
 # Weekly Activities
 --------------------------------------------------------------*/
@@ -1066,6 +1067,32 @@ textarea {
 .weekly-text p {
 	text-align: center;
 	font-size: 20px;
+}
+
+/*--------------------------------------------------------------
+# Special Events
+--------------------------------------------------------------*/
+
+.tribe-events-event-meta span, .tribe-events-event-meta a {
+	font-size: 16px;
+}
+
+.tribe-events-event-image {
+	width: 30%;
+	margin-top: 15px !important;
+}
+
+.tribe-events-list-event-description.tribe-events-content p {
+	text-align: left;
+	margin-top: 15px !important;
+}
+
+.single-tribe_events .tribe-events-event-image {
+	display: none;
+}
+
+.tribe-bar-date-filter {
+	display: none;
 }
 
 /*--------------------------------------------------------------
@@ -1080,17 +1107,25 @@ textarea {
 
 #nf-form-1-cont {
 	float: left;
-	width: 48%;
+	width: 47%;
 	border: 2px solid #478AB8;
 	padding: 0 20px 0 20px;
-	margin-right: 40px;
+	margin-right: 30px;
+	margin-left: 30px;
 }
 
 .contact-details {
 	float: left;
-	width: 48%;
+	width: 47%;
 	text-align: center;
 	border: 2px solid #478AB8;
+	clear: below;
+}
+
+.entry-content iframe {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
 }
 
 #nf-field-4 {
@@ -1392,6 +1427,7 @@ object {
 	#nf-form-1-cont {
 		float: none;
 		width: 100%;
+		margin: 0;
 	}
 
 	.contact-details {

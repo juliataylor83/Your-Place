@@ -25,10 +25,10 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop.?>
 
-				<div class="entry-content">
+				<div class="entry-content-about">
 
 					<ul class="our-team">
-						<?php query_posts('post_type=our_team&order=ASC'); ?>
+						<?php query_posts('post_type=our_team&order=ASC&posts_per_page=-1'); ?>
 							<?php while ( have_posts() ) : the_post(); 
 	    						$image = get_field("image");
 	    						$size = "medium";

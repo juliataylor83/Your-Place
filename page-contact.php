@@ -34,8 +34,10 @@ get_header(); ?>
 						<h2>Telephone</h2>
 						<p>01472 322 557</p>
 						<h2>Opening Hours</h2>
-						<p>Monday - Friday: 10.00am to 4.00pm</p>
+						<p>Monday - Friday: 10.00am to 12.00pm & 2.00pm to 4.00pm</p>
 					</section>
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592.3652242806975!2d-0.06662751689853785!3d53.56739049351001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x608c6d9dd7ce7159!2sYour+Place!5e0!3m2!1sen!2sus!4v1476709897079" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 				</div><!-- .entry-content -->
 
