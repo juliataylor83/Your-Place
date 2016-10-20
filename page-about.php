@@ -31,6 +31,7 @@ get_header(); ?>
 						<?php query_posts('post_type=our_team&order=ASC&posts_per_page=-1'); ?>
 							<?php while ( have_posts() ) : the_post(); 
 	    						$image = get_field("image");
+	    						$name = get_field("name");
 	    						$size = "medium";
 	    					?>
 							
@@ -38,6 +39,7 @@ get_header(); ?>
 								<?php if($image) : 
 									echo wp_get_attachment_image($image, $size);
 								endif; ?>
+								<p><?php echo $name; ?></p>
 							</li>
 
 							<?php endwhile; ?>

@@ -40,7 +40,7 @@ get_header(); ?>
 							<p><?php echo $column_1_text_2; ?></p>
 							<a class="button" href="<?php echo home_url(); ?>/what-we-do/weekly-activities">Weekly Activities</a>
 							<p><?php echo $column_1_text_3; ?></p>
-							<a class="button" href="<?php echo home_url(); ?>/">Volunteer</a>
+							<a class="button" href="http://yourplace:8888/wp-content/uploads/2016/10/Your-Place-Volunteer-Application-Form.pdf" target="_blank">Volunteer</a>
 							<p><?php echo $column_1_text_4; ?></p>
 							<a class="button" href="<?php echo home_url(); ?>/oasis-garden">Oasis Garden</a>
 						</div>

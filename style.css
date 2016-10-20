@@ -70,6 +70,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	margin-top: -8px;
 }
 
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -791,6 +792,24 @@ textarea {
 	display: block;
 }
 
+.menu-toggle {
+	color: white;
+	background-color: #00027d;
+	font-size: 16px;
+	margin-top: 16px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	-webkit-transition: background 500ms ease;
+	-moz-transition: background 500ms ease;
+	-ms-transition: background 500ms ease;
+	-o-transition: background 500ms ease;
+	transition: background 500ms ease;
+}
+
+.menu-toggle:hover {
+	background-color: #478AB8;
+}
+
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -1037,6 +1056,182 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Ethos
+--------------------------------------------------------------*/
+
+.ethos {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.ethos img {
+	margin-top: -30px;
+}
+
+.ethos-content {
+	width: 100%;
+	margin-top: 40px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Mission Statement
+--------------------------------------------------------------*/
+
+.mission-statement {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.mission-statement-content {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# History
+--------------------------------------------------------------*/
+
+.entry-content-history {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.entry-content-history p:nth-child(1) {
+	float: left;
+	width: 45%;
+	font-size: 24px;
+	text-align: center;
+	margin: 50px 10px 0 50px;	
+}
+
+.entry-content-history figure:nth-child(2) {
+	float: right;
+	width: 45%;
+	margin: 0 30px 0 10px;
+}
+
+.entry-content-history p:nth-child(3) {
+	float: right;
+	width: 45%;
+	font-size: 24px;
+	text-align: center;
+	margin: 50px 40px 0 20px;
+	clear: both;
+}
+
+.entry-content-history figure:nth-child(4) {
+	float: left;
+	width: 45%;
+	margin: 0 10px 0 50px;
+}
+
+.entry-content-history p:nth-child(5) {
+	float: left;
+	width: 45%;
+	font-size: 24px;
+	text-align: center;
+	margin: 60px 10px 0 30px;
+	clear: both;
+}
+
+.entry-content-history figure:nth-child(6) {
+	float: right;
+	width: 45%;
+	margin: 0 30px 0 10px;
+}
+
+.entry-content-history p:nth-child(7) {
+	float: right;
+	width: 45%;
+	font-size: 24px;
+	text-align: center;
+	margin: 50px 40px 0 10px;
+	clear: both;
+}
+
+.entry-content-history figure:nth-child(8) {
+	float: left;
+	width: 45%;
+	margin: 0 -30px 0 100px;
+}
+
+.entry-content-history p:nth-child(9) {
+	float: left;
+	width: 45%;
+	font-size: 24px;
+	text-align: center;
+	margin: 40px 10px 0 20px;	
+	clear: both;
+}
+
+.entry-content-history figure:nth-child(10) {
+	float: right;
+	width: 45%;
+	margin: 40px 10px 0 50px;
+	padding-left: 50px;
+}
+
+.entry-content-history p:nth-child(11) {
+	float: right;
+	width: 45%;
+	font-size: 24px;
+	text-align: center;
+	margin: 40px 30px 0 30px;
+	clear: both;
+}
+
+.entry-content-history figure:nth-child(12) {
+	float: left;
+	width: 45%;
+	margin: 30px 0 0 60px;
+}
+
+.entry-content-history p:nth-child(13) {
+	float: left;
+	width: 45%;
+	font-size: 24px;
+	text-align: center;
+	margin: 40px 10px 0 40px;
+	clear: both;
+}
+
+.entry-content-history figure:nth-child(14) {
+	float: right;
+	width: 45%;
+	margin: 0 0 0 50px;
+	padding-left: 80px;
+}
+
+.entry-content-history p:nth-child(15) {
+	float: right;
+	width: 45%;
+	font-size: 24px;
+	text-align: center;
+	margin: 30px 30px 0 30px;
+	padding-right: 50px;
+	clear: both;
+}
+
+.entry-content-history figure:nth-child(16) {
+	float: left;
+	width: 45%;
+	margin: 0 0 40px 50px;
+	padding-left: 120px;
+}
+
+.entry-content-history p:nth-child(17) {
+	text-align: center;
+	width: 100%;
+	font-size: 34px;
+	margin: 0 0 -20px 10px;
+	color: #00027D;
+	font-weight: bold;
+	clear: both;
+}
+
+
+/*--------------------------------------------------------------
 # Our Team (About)
 --------------------------------------------------------------*/
 
@@ -1052,11 +1247,22 @@ textarea {
 	clear: initial;
 }
 
+.our-team {
+	margin-left: 5px;
+}
+
 .our-team li {
 	float: left;
 	width: 20%;
 	height: 100%;
 	list-style: none;
+}
+
+.our-team li p {
+	text-align: center;
+	padding-right: 35px;
+	margin-top: 0;
+	margin-bottom: 40px;
 }
 
 
@@ -1093,6 +1299,10 @@ textarea {
 
 .tribe-bar-date-filter {
 	display: none;
+}
+
+a.tribe-events-ical.tribe-events-button {
+	display: none !important;
 }
 
 /*--------------------------------------------------------------
@@ -1357,6 +1567,9 @@ object {
 	.our-team {
 		margin-left: -20px;
 	}
+	.our-team li p {
+		padding-right: 15px;
+	}
 }
 
 @media screen and (max-width: 84em) {
@@ -1385,9 +1598,11 @@ object {
 		padding: 0;
 		width: 100%;
 	}
-	.inner {
-		padding-right: 20px;
+	.site-header.inner {
 		padding-left: 20px;
+	}
+	.main-navigation {
+		float: none;
 	}
 	.metaslider .caption,
 	.metaslider .cs-title,
@@ -1434,6 +1649,24 @@ object {
 		float: none;
 		width: 100%;
 	}
+	.our-team li p {
+		font-size: 14px;
+		padding-right: 10px;
+	}
+	
+}
+
+@media screen and (max-width: 60em) {
+	.our-team li p {
+		font-size: 11px;
+		padding-right: 5px;
+	}
+}
+
+@media screen and (max-width: 48em) {
+	.main-navigation li {
+		float: none;
+	}
 }
 
 @media screen and (max-width: 45em) {
@@ -1457,5 +1690,22 @@ object {
 		background: rgba(0,0,0, 1);
 		margin-bottom: 10px;
 		margin-left: 10px;
+	}
+	.our-team li p {
+		font-size: 8px;
+		padding-right: 0;
+	}
+	.tribe-events-event-meta span, .tribe-events-event-meta a {
+		font-size: 12px;
+	}
+	.tribe-events-list-event-description.tribe-events-content p {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 35em) {
+	.our-team li p {
+		font-size: 6px;
+		padding-right: 0;
 	}
 }
