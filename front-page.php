@@ -65,8 +65,14 @@ get_header(); ?>
 				</div><!-- .entry-content -->
 
 			<?php endwhile; // End of the loop.?>
+
 			<div class="header-logo-frontpage">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/logo_big.png" alt="Logo Big" />
+			</div>
+			<div class="homepage-weekly-activities">
+				<aside class="homepage-weekly-activities-video">
+					<iframe src="https://player.vimeo.com/video/189174425" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</aside>
 			</div>
 
 		</main><!-- #main -->
