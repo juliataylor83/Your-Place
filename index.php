@@ -9,7 +9,8 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Your_Place
+ * @package WordPress
+ * @subpackage Your_Place
  */
 
 get_header(); ?>
