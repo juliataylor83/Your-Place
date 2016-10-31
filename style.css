@@ -722,6 +722,10 @@ textarea {
 	color: #00027d;
 }
 
+.main-navigation li:nth-child(5).current-menu-item a {
+	color: #00027d;
+}
+
 .main-navigation a {
 	display: block;
 	text-decoration: none;
@@ -949,10 +953,6 @@ textarea {
 
 .column1 a.button {
 	color: white;
-}
-
-.fa {
-	color: #478AB8;
 }
 
 .column1 img {
@@ -1869,6 +1869,13 @@ object {
 	}
 	.tribe-events-list-event-description.tribe-events-content p {
 		font-size: 14px;
+		padding-right: 50px;
+	}
+	.tribe-events-list-separator-month {
+		margin-right: 40px;
+	}
+	.tribe-events-page-title {
+		margin-right: 40px;
 	}
 }
 
