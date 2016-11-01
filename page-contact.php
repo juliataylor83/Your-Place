@@ -26,7 +26,7 @@ get_header(); ?>
 				<div class="entry-content">
 					
 					<section class="contact-details">
-						<h2>Address</h2>
+						<h2>Address is happy</h2>
 						<p>236 Wellington Street</p>
 						<p>Great Grimsby</p>
 						<p>North East Lincolnshire</p>
